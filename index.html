@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    
+    <main class="container">
+        <aside class="search-section">
+            <div class="search-container">
+                <h2>Search for a City:</h2>
+                <input type="text" id="city-input" placeholder="Enter city name">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="search-history" id="search-history">
+                <!-- Search history will be populated here -->
+                <h2>Search History:</h2>
+                <button class="history-btn">City Name</button>
+                <button class="history-btn">City Name</button>
+                <button class="history-btn">City Name</button>
+                <button class="history-btn">City Name</button>  
+            </div>
+        </aside>
+
+        <section class="weather-section">
+            <div class="current-weather" id="current-weather">
+                <!-- Current weather will be displayed here -->
+                <h2>Current Weather:</h2>
+                <p>City Name</p>
+                <p>Temperature: </p>
+                <p>Humidity: </p>
+                <p>Wind Speed: </p>
+            </div>
+            <div class="forecast">
+                <h2>5-Day Forecast:</h2>
+                <div class="forecast-cards" id="forecast-cards">
+                    <!-- Forecast cards will be populated here -->
+                    <div class="forecast-card">
+                        <p>Date</p>
+                        <p>Temperature: </p>
+                        <p>Humidity: </p>
+                        <p>Wind Speed: </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html> 
