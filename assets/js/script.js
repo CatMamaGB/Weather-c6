@@ -90,7 +90,6 @@ class WeatherDashboard {
             this.displaySearchHistory();
         }
     }
-
     loadSearchHistory() {
         const history = JSON.parse(localStorage.getItem('weatherHistory')) || [];
         this.displaySearchHistory(history);
